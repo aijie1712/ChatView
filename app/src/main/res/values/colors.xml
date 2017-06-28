@@ -3,4 +3,18 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#DDDDDD</color>
+    <color name="global_blue">#40ADFF</color>
+    <color name="transparent">#00000000</color>
+    <!--分割线颜色-->
+    <color name="global_split_line_color">#DDDDDD</color>
+    <!--全局大文本颜色-->
+    <color name="global_text_color">#333333</color>
+    <color name="global_text_color_middle">#666666</color>
+    <color name="global_text_color_hint">#999999</color>
+    <!--全局背景颜色-->
+    <color name="global_bg_color">#F8F8F8</color>
 </resources>

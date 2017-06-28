@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/global_split_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <com.rockerhieu.emojicon.EmojiconEditText
+            android:id="@+id/chat_input_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/bg_round_edittext"
+            android:maxLength="1000"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/global_text_color"
+            android:textSize="@dimen/text_14" />
+
+        <ImageView
+            android:id="@+id/iv_emoji"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:src="@drawable/icon_chat_emoji" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_btn_send"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_chat_more"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/id_emoji_emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/global_blue"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_more"
+        layout="@layout/layout_chat_more"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+</LinearLayout>

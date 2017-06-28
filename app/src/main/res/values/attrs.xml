@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--登录等使用的inputView-->
+    <declare-styleable name="MyEmojiEditText">
+        <attr name="emoji_max_length" format="integer" />
+    </declare-styleable>
+</resources>
