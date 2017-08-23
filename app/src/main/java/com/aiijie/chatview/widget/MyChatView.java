@@ -34,7 +34,7 @@ import com.rockerhieu.emojicon.EmojiconEditText;
 import com.rockerhieu.emojicon.EmojiconsFragment;
 
 /**
- * Created by klx on 2017/5/16.
+ * Created by Android_Aj on 2017/5/16.
  * 聊天控件
  */
 public class MyChatView extends RelativeLayout implements View.OnClickListener {
