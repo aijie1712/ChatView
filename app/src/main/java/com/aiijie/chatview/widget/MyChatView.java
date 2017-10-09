@@ -175,7 +175,7 @@ public class MyChatView extends RelativeLayout implements View.OnClickListener {
             public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
                 StringBuilder tempResult = new StringBuilder(source).append(dest);
                 if (!TextUtils.isEmpty(tempResult.toString()) && tempResult.toString().length() > maxInputLength) {
-                    UiUtil.showToast("最多输入" + maxInputLength + "个字");
+                    UiUtil.showToast("最多输入" + maxInputLength + "字");
                 }
                 return super.filter(source, start, end, dest, dstart, dend);
             }
